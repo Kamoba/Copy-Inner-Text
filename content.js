@@ -9,14 +9,6 @@ browser.runtime.onMessage.addListener(function(request, sender, sendResponse) {
   }
 });
 
-
-
-document.addEventListener("contextmenu", function(event) {
-  var target = event.target;
-  target.setAttribute("id", "context-menu-target");
-});
-
-
 // Listen for right-click events
 document.addEventListener("mousedown", event => {
   if (event.button === 2) {
